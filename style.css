@@ -270,6 +270,12 @@ footer button > img {
   }
 
   .illustration {
-    height: 30rem;
+    width: 70%;
+    height: 40rem;
+    background-image: url(/images/drawers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
   }
 }
