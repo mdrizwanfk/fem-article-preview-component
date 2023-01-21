@@ -95,7 +95,7 @@ svg {
 
 /* FEM Attribution */
 .attribution {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 11px;
   text-align: center;
 }
@@ -136,6 +136,10 @@ svg {
   background-color: var(--clr-primary-4);
 }
 
+.fw-bold {
+  font-weight: var(--fw-700);
+}
+
 /* Body */
 body {
   min-height: 100vh;
@@ -145,4 +149,108 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body-1);
   font-weight: var(--fw-500);
+  background-color: var(--clr-primary-4);
+}
+
+/* Article Card */
+#article-card {
+  margin: 5rem 2rem 2rem;
+  background-color: white;
+}
+
+.illustration {
+  height: 20rem;
+  background-image: url(/images/drawers.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+#article-card > :nth-child(n + 2):nth-child(-n + 3) {
+  padding: 0 2rem;
+}
+
+#article-card > footer > :nth-last-child(1) {
+  background-color: rebeccapurple;
+  /* height: 8rem; */
+}
+
+#article-card > h1 {
+  margin-bottom: 1.5rem;
+  font-size: var(--fs-heading-1);
+}
+
+#article-card > p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+}
+
+#avatar-view,
+#share-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 2rem;
+}
+
+footer > .hide {
+  display: none !important;
+}
+
+#avatar-view {
+}
+
+.avatar {
+  display: flex;
+}
+
+.avatar > img {
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.avatar-info {
+}
+
+.avatar .name {
+  margin-bottom: 0.5rem;
+}
+
+.avatar .published-on {
+}
+
+footer button {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+footer button > img {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--clr-primary-4);
+}
+
+#share-view {
+}
+
+.socials {
+  display: flex;
+}
+
+.socials p {
+  letter-spacing: 0.7rem;
+}
+
+.socials > img {
+  padding: 0 1rem;
+}
+
+#share-view > img {
 }
