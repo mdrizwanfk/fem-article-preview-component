@@ -142,6 +142,10 @@ svg {
   font-weight: var(--fw-700);
 }
 
+.hide {
+  display: none !important;
+}
+
 /* Body */
 body {
   min-height: 100vh;
@@ -159,6 +163,8 @@ body {
   margin: 5rem 2rem 2rem;
   background-color: white;
   border-radius: var(--border-radius);
+  min-width: 30rem;
+  max-width: 41rem;
 }
 
 .illustration {
@@ -265,17 +271,64 @@ footer button > img {
 
 @media screen and (min-width: 992px) {
   #article-card {
-    max-width: 108rem;
+    max-width: 90rem;
     display: flex;
   }
 
   .illustration {
     width: 70%;
-    height: 40rem;
-    background-image: url(/images/drawers.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: unset;
     border-radius: var(--border-radius) 0 0 var(--border-radius);
+    margin-bottom: 0;
+  }
+
+  .article-content {
+    padding: 0;
+    margin-bottom: 6rem;
+  }
+
+  #share-view {
+    display: none;
+  }
+
+  #avatar-view {
+    padding: 0;
+  }
+
+  .lg-wrapper {
+    padding: 4rem 5rem;
+  }
+
+  .share-tooltip-wrapper-lg {
+    position: relative;
+  }
+
+  #share-view-lg {
+    display: inline-block;
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    width: max-content;
+    max-width: 50rem;
+    transform: translateX(-50%) translateY(var(--translate-y, 0));
+    background-color: var(--clr-primary-1);
+    padding: 0 2rem;
+    border-radius: var(--border-radius);
+  }
+
+  #share-view-lg:after {
+    border: 10rem solid transparent;
+    border-top-color: green;
+  }
+
+  .socials button {
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .socials > button > img {
+    padding: none;
+    border-radius: none;
+    background-color: transparent;
   }
 }
